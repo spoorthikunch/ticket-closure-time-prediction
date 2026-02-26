@@ -2,13 +2,13 @@
 
 This project predicts IT service ticket closure time (in hours) using Machine Learning and Deep Learning models.
 
-It demonstrates the complete workflow from preprocessing to model evaluation and deployment setup.
+It demonstrates the complete workflow from data preprocessing and feature engineering to model evaluation and deployment.
 
 ---
 
 ## 📌 Project Overview
 
-The goal is to estimate how long a ticket will take to close based on features such as:
+The objective is to estimate ticket resolution time based on structured ticket attributes such as:
 
 - Category  
 - Subcategory  
@@ -27,14 +27,14 @@ The goal is to estimate how long a ticket will take to close based on features s
 - XGBoost Regressor  
 
 ### Deep Learning
-- Artificial Neural Network (ANN)
-- Embedding layers for categorical features  
+- Artificial Neural Network (ANN)  
+- Embedding layers for categorical feature representation  
 
 ---
 
 ## 🏆 Final Model
 
-The **Random Forest Regressor** was selected as the final model due to better generalization and stable performance.
+The **Random Forest Regressor** was selected as the final model due to strong generalization performance and stable results on unseen test data.
 
 ---
 
@@ -51,12 +51,11 @@ The **Random Forest Regressor** was selected as the final model due to better ge
 
 ## ⚙️ Run Locally
 
-```bash
-git clone https://github.com/spoorthikunch/ticket-closure-time-prediction.git
-cd ticket-closure-time-prediction
+git clone https://github.com/spoorthikunch/ticket-closure-time-prediction.git  
+cd ticket-closure-time-prediction  
 
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv venv  
+source venv/bin/activate  
 
-pip install -r requirements.txt
-streamlit run app.py
+pip install -r requirements.txt  
+streamlit run app.py  
